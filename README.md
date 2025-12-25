@@ -8,6 +8,11 @@
 In Demo session we have Overview of the all CI/CD tools & AWS Road Map
 
 
+
+<img width="1596" height="683" alt="image" src="https://github.com/user-attachments/assets/ea941b0c-6568-4395-bceb-d73c77e8eff6" />
+
+
+
 <img width="1909" height="725" alt="image" src="https://github.com/user-attachments/assets/61ba06cc-e465-488c-8611-05da91992c12" />
 
 
@@ -25,6 +30,8 @@ In Demo session we have Overview of the all CI/CD tools & AWS Road Map
 
 2.Discussed about the all the DevOps roles
 
+
+<img width="1596" height="683" alt="image" src="https://github.com/user-attachments/assets/4db96df2-0860-4e6e-9072-d9d8ca1202b6" />
 
 
 <img width="1909" height="725" alt="image" src="https://github.com/user-attachments/assets/61ba06cc-e465-488c-8611-05da91992c12" />
