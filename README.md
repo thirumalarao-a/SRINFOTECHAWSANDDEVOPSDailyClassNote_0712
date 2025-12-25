@@ -189,5 +189,159 @@ Repository Created SUccessfully with Default branch main
 <img width="1317" height="697" alt="image" src="https://github.com/user-attachments/assets/ad4a2344-159b-49e4-a83e-e85df6fdbb53" />
 
 
+Git Commands::
+==============
 
+>git clone git@github.com:srinfotechbatch5/SRINFOTECHDemo.git
+
+>cd SRINFOTECHDemo
+
+after made the some changes
+
+>git status
+
+>git add --all
+>git status
+>git commit -m "commit message"
+>git push   ----> changes pushed from local machine to remote
+
+
+Generate SSHKeys:: to Integarte Git to Github
+==============================================
+
+syntax::ssh-keygen -t ed25519 -C "your_email@example.com"
+
+
+>ssh-keygen -t ed25519 -C "srinfotechbatch5@gmail.com"
+
+Keys avaibale path and save the key (/c/Users/HP/.ssh/id_ed25519):
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/036b310b-0c16-4bc1-b4ef-0bd479450509" />
+
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/148e65ae-7023-4b85-9c43-3edbaa9c04c7" />
+
+
+Please follow below links for more understanding 
+
+https://docs.github.com/en/authentication/connecting-to-github-with-ssh
+
+https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+
+Once genearted the keys (public/private) and copy public key to Github Account
+
+Go to -->Open Copilot   ---->Settings  --->Click SSH and GPG keys
+
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/683eb1e3-0836-48c5-9399-a54d201bbc06" />
+
+
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/6c7a3749-757f-4adc-bcd8-ca328330858f" />
+
+
+
+
+Click SSH and GPG Keys
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/f7fb1aa6-52c0-47f6-a378-99475c0a9b43" />
+
+
+
+click New SSH Key
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/ad66cb42-82af-48ca-b1c3-01ab480e17a7" />
+
+
+
+Add new SSH Key and click Add SSH Key
+
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/df130ae9-0e1b-4041-8dbd-a878088e69cf" />
+
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/1adfb3b1-e41c-453d-a035-29a54dd67d77" />
+
+
+
+Lab Practice::
+==============
+
+HP@DESKTOP-3GU6R56 MINGW64 ~/Documents/SRINFOTECH Batch5
+$ git clone git@github.com:srinfotechbatch5/SRINFOTECHDemo.git
+Cloning into 'SRINFOTECHDemo'...
+The authenticity of host 'github.com (20.207.73.82)' can't be established.
+ED25519 key fingerprint is: SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'github.com' (ED25519) to the list of known hosts.
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (3/3), done.
+
+HP@DESKTOP-3GU6R56 MINGW64 ~/Documents/SRINFOTECH Batch5
+$ cd SRINFOTECHDemo
+
+HP@DESKTOP-3GU6R56 MINGW64 ~/Documents/SRINFOTECH Batch5/SRINFOTECHDemo (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+HP@DESKTOP-3GU6R56 MINGW64 ~/Documents/SRINFOTECH Batch5/SRINFOTECHDemo (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        SRINFOTECH.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+HP@DESKTOP-3GU6R56 MINGW64 ~/Documents/SRINFOTECH Batch5/SRINFOTECHDemo (main)
+$ git add --all
+
+HP@DESKTOP-3GU6R56 MINGW64 ~/Documents/SRINFOTECH Batch5/SRINFOTECHDemo (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   README.md
+        new file:   SRINFOTECH.md
+
+
+HP@DESKTOP-3GU6R56 MINGW64 ~/Documents/SRINFOTECH Batch5/SRINFOTECHDemo (main)
+$ git commit -m "modified readmefile and added SRINFOETCH folder"
+[main fa390d1] modified readmefile and added SRINFOETCH folder
+ 2 files changed, 8 insertions(+), 1 deletion(-)
+ create mode 100644 SRINFOTECH.md
+
+HP@DESKTOP-3GU6R56 MINGW64 ~/Documents/SRINFOTECH Batch5/SRINFOTECHDemo (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 327 bytes | 163.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To github.com:srinfotechbatch5/SRINFOTECHDemo.git
+   a3bb92c..fa390d1  main -> main
+
+HP@DESKTOP-3GU6R56 MINGW64 ~/Documents/SRINFOTECH Batch5/SRINFOTECHDemo (main)
+$
 
