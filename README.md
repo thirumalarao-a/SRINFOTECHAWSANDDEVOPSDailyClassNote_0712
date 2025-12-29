@@ -494,4 +494,255 @@ HP@DESKTOP-3GU6R56 MINGW64 ~/Documents/SRINFOTECH Batch5/hello-world-java (maste
 $
 
 
+26/12/2025::
+===========
+
+
+Github branching strategy::
+===========================
+
+Github Branching Model::
+-------------------------------
+
+A GitHub branching model is a structured way of organizing branches in a Git repository to manage development workflows effectively. It helps teams work collaboratively, isolate features, manage releases, and deploy code more efficiently.
+
+
+<img width="1823" height="723" alt="image" src="https://github.com/user-attachments/assets/f537c18a-d62e-4d88-a00f-9817e0940695" />
+
+
+A GitHub branching strategy is crucial for maintaining an organized workflow in version control. There are different strategies depending on the size of the project, the number of team members, and the desired workflow. Here are some common branching strategies used in GitHub:
+
+main or master branch:: This is default branch and whenever we created the empty Repository by defauly main or master branche is created automatically.
+main or master branch always stable and live code 
+
+feature branch:: It could be a new feature, an improvement of existing features, bug fixes, or any other changes. A feature branch is a type of branch in Git typically used to develop new features for the software.feature branch will created from main or master OR feature branch created from latest release branch always based on the release cycle
+
+formate:: feature/YYYY.MM.DD
+ feature/2025.12.26
+
+release branch:: Based on the release we have created release branch accourdingly and starts the next release cycle.
+always release branch created from master only and master have stable and live code and post release we shold merged code changes to master branch only
+
+release/2025.12.26
+
+
+cloning references::
+
+![image](https://github.com/user-attachments/assets/87f6ed4a-095b-4faa-854a-7fcdc019f31f)
+
+
+
+Create New Branch::
+=================
+
+Click Branches
+
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/a795a257-a126-449e-9dba-22729bec940d" />
+
+Find New Branch at Right side and click
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/2b5fbd36-953e-45e0-baef-450c680b7e5f" />
+
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/17de84ed-cc93-4b01-8f32-5a1ff0ddf3ee" />
+
+New feature Branch Formate----> feature/YYYY.MM.DD
+
+feature/2025.12.26
+
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/60902962-ec6c-4c9f-90eb-04c9835a64d0" />
+
+click create New Branch 
+
+Branch Created Successfully
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/b6821e5f-3b54-406d-a4ae-7f2fd885974f" />
+
+
+
+Branches:
+==============
+
+
+main (or master): Always production-ready.
+
+feature/*: Used for new features.
+
+release/*: Prepares for a new production release.
+
+main or master branch:: 
+=====================
+
+This is default branch and whenever we created the empty Repository by defauly main or master branche is created automatically. main or master branch always stable and live code
+
+feature branch:: 
+===============
+
+It could be a new feature, an improvement of existing features, bug fixes, or any other changes. A feature branch is a type of branch in Git typically used to develop new features for the software.feature branch will created from main or master OR feature branch created from latest release branch always based on the release cycle
+
+formate:: 
+=============
+
+feature/YYYY.MM.DD 
+
+feature/2025.12.26
+
+release branch:: 
+====================
+
+Based on the release we have created release branch accourdingly and starts the next release cycle. always release branch created from master only and master have stable and live code and post release we shold merged code changes to master branch only
+
+release/2025.12.26
+
+
+Raise PR (Pull Request) :: 
+=================================
+
+Merge the code from one branch to another branch that is called pull request
+
+below are the steps to raise PR::
+
+Go to -->Pull requests and click
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/baf5a7d7-f69d-44e8-87ad-ae67d082353f" />
+
+
+Click New Pull Request::
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/68456b4f-bd40-41b6-a238-25439f97dff4" />
+
+
+please select base & compare branches so here base branch is release/2025.08.10 and compare branch is feature/2025.08.05
+
+i'm going to merge code changes from feature branch to release branch 
+
+
+click create pull request
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/6b7a39c0-7a34-45c9-812b-ca518d1a441a" />
+
+
+![image](https://github.com/user-attachments/assets/08a98671-c810-46fc-9024-17bae7538a61)
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e36c29e8-3c38-4579-8073-58ac6304e6fd" />
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/dc582d4a-e173-4648-a76c-3aebd7869b5b" />
+
+
+click merge request
+
+![image](https://github.com/user-attachments/assets/44a4b84e-1aef-4b19-a93e-64e48b362b29)
+
+ Open
+
+srinfotechbatch3 wants to merge 1 commit into main from 2025.12.26
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/5a70ee7d-fc8e-45aa-bb28-6a445a223cf0" />
+
+
+confirm merge
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/b6e9ab2f-30cc-4fe2-9754-03f6f6262786" />
+
+
+Merged
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/b8dfb8ae-1a1c-4245-a4ee-944db6bbd07e" />
+
+
+
+Lab Practice::
+==============
+
+
+HP@DESKTOP-3GU6R56 MINGW64 ~/Documents/SRINFOTECH Batch5
+$ git clone git@github.com:srinfotechbatch5/USER-Help.git
+Cloning into 'USER-Help'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (3/3), done.
+
+HP@DESKTOP-3GU6R56 MINGW64 ~/Documents/SRINFOTECH Batch5
+$ cd USER-Help
+
+HP@DESKTOP-3GU6R56 MINGW64 ~/Documents/SRINFOTECH Batch5/USER-Help (main)
+$ git checkout feature/2025.12.26
+branch 'feature/2025.12.26' set up to track 'origin/feature/2025.12.26'.
+Switched to a new branch 'feature/2025.12.26'
+
+HP@DESKTOP-3GU6R56 MINGW64 ~/Documents/SRINFOTECH Batch5/USER-Help (feature/2025.12.26)
+$ git status
+On branch feature/2025.12.26
+Your branch is up to date with 'origin/feature/2025.12.26'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        user help.java
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+HP@DESKTOP-3GU6R56 MINGW64 ~/Documents/SRINFOTECH Batch5/USER-Help (feature/2025.12.26)
+$ git add --all
+
+HP@DESKTOP-3GU6R56 MINGW64 ~/Documents/SRINFOTECH Batch5/USER-Help (feature/2025.12.26)
+$ git status
+On branch feature/2025.12.26
+Your branch is up to date with 'origin/feature/2025.12.26'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   user help.java
+
+
+HP@DESKTOP-3GU6R56 MINGW64 ~/Documents/SRINFOTECH Batch5/USER-Help (feature/2025.12.26)
+$ git commit -m "added user help class fro to impelment for new feature"
+[feature/2025.12.26 ded7444] added user help class fro to impelment for new feature
+ 1 file changed, 6 insertions(+)
+ create mode 100644 user help.java
+
+HP@DESKTOP-3GU6R56 MINGW64 ~/Documents/SRINFOTECH Batch5/USER-Help (feature/2025.12.26)
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 407 bytes | 203.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To github.com:srinfotechbatch5/USER-Help.git
+   8d30cae..ded7444  feature/2025.12.26 -> feature/2025.12.26
+
+HP@DESKTOP-3GU6R56 MINGW64 ~/Documents/SRINFOTECH Batch5/USER-Help (feature/2025.12.26)
+$ git status
+On branch feature/2025.12.26
+Your branch is up to date with 'origin/feature/2025.12.26'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   user help.java
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+HP@DESKTOP-3GU6R56 MINGW64 ~/Documents/SRINFOTECH Batch5/USER-Help (feature/2025.12.26)
+$ git add --all
+
+HP@DESKTOP-3GU6R56 MINGW64 ~/Documents/SRINFOTECH Batch5/USER-Help (feature/2025.12.26)
+$ git commit -m "added user help class fro to impelment for new feature"
+[feature/2025.12.26 a4ac643] added user help class fro to impelment for new feature
+ 1 file changed, 22 insertions(+)
+
+HP@DESKTOP-3GU6R56 MINGW64 ~/Documents/SRINFOTECH Batch5/USER-Help (feature/2025.12.26)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 429 bytes | 429.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To github.com:srinfotechbatch5/USER-Help.git
+   ded7444..a4ac643  feature/2025.12.26 -> feature/2025.12.26
+
 
