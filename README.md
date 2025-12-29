@@ -518,12 +518,12 @@ main or master branch always stable and live code
 feature branch:: It could be a new feature, an improvement of existing features, bug fixes, or any other changes. A feature branch is a type of branch in Git typically used to develop new features for the software.feature branch will created from main or master OR feature branch created from latest release branch always based on the release cycle
 
 formate:: feature/YYYY.MM.DD
- feature/2025.12.26
+ feature/2025.08.05
 
 release branch:: Based on the release we have created release branch accourdingly and starts the next release cycle.
 always release branch created from master only and master have stable and live code and post release we shold merged code changes to master branch only
 
-release/2025.12.26
+release/2025.08.10
 
 
 cloning references::
@@ -549,7 +549,7 @@ Find New Branch at Right side and click
 
 New feature Branch Formate----> feature/YYYY.MM.DD
 
-feature/2025.12.26
+feature/2025.08.05
 
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/60902962-ec6c-4c9f-90eb-04c9835a64d0" />
@@ -637,7 +637,7 @@ click merge request
 
  Open
 
-srinfotechbatch3 wants to merge 1 commit into main from 2025.12.26
+srinfotechbatch3 wants to merge 1 commit into main from 2025.08.05
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/5a70ee7d-fc8e-45aa-bb28-6a445a223cf0" />
 
