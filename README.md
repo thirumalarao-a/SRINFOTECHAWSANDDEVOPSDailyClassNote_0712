@@ -1301,7 +1301,7 @@ General Section provide the Project/job description
 At SCM stage level select the Git and provide the github details
 
 
-https://github.com/srinfotechbatch3/spring-petclinic
+https://github.com/srinfotechbatch5/spring-petclinic
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/6f736b3a-6179-4a86-a56b-08d76c22ffdd" />
 
