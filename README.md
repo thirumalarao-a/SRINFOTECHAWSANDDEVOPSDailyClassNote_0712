@@ -1571,3 +1571,126 @@ https://github.com/srinfotechbatch5/onlinebookstore.git
 
 
 
+02/02/2026::
+===============
+
+
+Execute the Jobs in Parallel::
+==============================
+
+
+1.By Default execute the Jenkins build jobs are sequence way,one by one 
+
+2.Don’t do 2 projects build parallel  this is real time scenario but we can do parallel builds as well one job
+
+Jenkins build parallel setup
+
+Go job ---> configure ----> Generall ---> Execute concurrent builds if necessary
+
+
+![image](https://github.com/user-attachments/assets/3216a68f-b10b-44cd-83b5-b62c27525296)
+
+
+![image](https://github.com/user-attachments/assets/909edd87-548d-4ded-a862-29cf850fac05)
+
+
+Executors::
+=============
+
+Go to Manage Jenkins  ----> System ----># of executors
+
+
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/0d817873-45e7-4354-a0e9-8a1783ce338a" />
+
+
+
+Here 10 builds execute parallel ,I kept executor is 10 this is same machine 
+
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/bf2c18d8-3ab8-4f8d-b465-e7de1449d4a7" />
+
+
+Poll SCM ::
+================
+
+Jenkins server ask git if there is any changes in git server or not, if changes there Jenkins server build/package the changes , every change build happened like 5 mints ,means every 5 minutes verify the Jenkins server to git if there is any changes 
+
+<img width="1629" height="686" alt="image" src="https://github.com/user-attachments/assets/63643206-be1e-43da-92bd-03d50cabf97b" />
+
+
+POLL SCM ----* * * * * --every minute when every commit 
+
+Build Periodically:::	
+============================
+
+H/15 * * * *   ----this build happened every 5 minutes without commits ,if changes are commit or not but every 5 mints build happened in Jenkins 
+
+
+Please create a New Jenkins jobs both POLL SCM & Build Periodically 
+
+https://github.com/srinfotechbatch5/spring-petclinic.git
+
+https://github.com/srinfotechbatch5/onlinebookstore.git
+
+Automatically Discard Old Builds:::
+==============================
+To automate the process of discarding old builds, you can configure the job’s settings to automatically delete old builds based on criteria such as the number of builds to keep or the age of the builds.
+
+Follow these steps:
+
+Open the Jenkins job (project).
+Click on Configure (on the left-hand side).
+Scroll down to the Build Discarder section (usually under the Build Triggers section).
+Check Discard old builds.
+Specify the following options:
+Max # of builds to keep: Set the maximum number of builds to keep.
+Max days to keep builds: Set the maximum age for builds to keep.
+Save the configuration by clicking Save.
+
+
+![image](https://github.com/user-attachments/assets/8d8c9cf9-988a-41e4-b052-539ef601171f)
+
+
+
+Build Periodically:::	H/15 * * * *   ----this build happened every 5 minutes without commits ,if changes are commit or not but every 5 mints build happened in Jenkins 
+
+
+Create Sample Build peridiocally jenkins job::
+=============================================
+
+Description
+
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/4827b662-c7e4-47ad-8cbc-65ded11d095b" />
+
+
+Git url::
+
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/5f0da0e6-fcd7-4ad2-b854-3df9af2393a7" />
+
+
+Build the branch
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/4f0ac907-c4ab-4ae9-b632-e8ddf71a7160" />
+
+
+every 1 minute build will trigger
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/cf65d287-5c0a-4855-8ddc-9b26be1c7a26" />
+
+
+every 5 mints build will trigger
+
+Build Periodically:::	H/15 * * * *   ----this build happened every 5 minutes without commits ,if changes are commit or not but every 5 mints build happened in Jenkins 
+
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/1ed08304-1831-4a27-af65-f17da5117e05" />
+
+
+click save 
+
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/57d8ccdb-34a8-43b0-a5f0-1f0538a0fc10" />
+
