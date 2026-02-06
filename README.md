@@ -1706,7 +1706,10 @@ Email Notifications::
 
 2. give continues Feedback to the Dev team via Email when a build passes, fails
 
-<img width="1739" height="576" alt="image" src="https://github.com/user-attachments/assets/0b411df9-85d9-4f47-9837-60566f223acf" />
+
+
+<img width="1572" height="665" alt="image" src="https://github.com/user-attachments/assets/b04dfaa0-83d0-46b2-ab0a-6063db010d9a" />
+
 
 
 Steps::
