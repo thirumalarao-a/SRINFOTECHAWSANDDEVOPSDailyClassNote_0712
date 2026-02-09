@@ -1877,11 +1877,9 @@ Published Artifacts & Test Results::
 ![image](https://github.com/user-attachments/assets/591cddf5-eb86-4942-91a7-1dc5bfbb0f72)
 
 
-![image](https://github.com/user-attachments/assets/23f6cd8e-1aac-4597-9900-a4c759ad4b8a)
 
 Post build Action i want to published artifacts & test results
 
-![image](https://github.com/user-attachments/assets/fcd3ea28-a352-431f-8e1b-86758787fe7a)
 
 I'm going to created one free style job and configured Post-build Actions
 
