@@ -2055,8 +2055,6 @@ I want a build 3 projects ,one project build is success then it will start 2nd p
 
 
 
-![image](https://github.com/user-attachments/assets/b2dfde9d-e397-46b8-a8cb-67ab3711b141)
-
 
 Project-A, Projec -B, Projec - C 
 
@@ -2085,9 +2083,6 @@ Github URL::: https://github.com/srinfotechbatch5/spring-petclinic.git
 Post Build Action , select the option Build Other Project  Project-B
 
 
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/d4b24fde-a3a9-4b98-882b-69dc46a4e9e6" />
-
-
 
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/0b792995-005a-4175-9cdb-4cd8524fea60" />
@@ -2110,8 +2105,6 @@ Post Build Action , select the option Build Other Project Project-C
 
 
 
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/efa90369-f73d-4b25-bcc9-72841cb42c4f" />
-
 
 
 Project-C::
@@ -2126,4 +2119,7 @@ Github URL:::https://github.com/srinfotechbatch5/devOpsWeb.git
 
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/256cac24-5476-4b71-8079-adb194559549" />
+
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/ed6d257b-d93f-4eee-9a07-9dade9f5b984" />
 
