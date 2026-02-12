@@ -2123,3 +2123,212 @@ Github URL:::https://github.com/srinfotechbatch5/devOpsWeb.git
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/ed6d257b-d93f-4eee-9a07-9dade9f5b984" />
 
+
+
+12/02/2026::
+==============
+
+Pipelines Introduction:::
+=============================
+
+A Jenkins pipeline is a series of automated steps or stages that define the process of continuous integration/continuous delivery (CI/CD) for your code. Jenkins, being a popular open-source automation server, uses pipelines to automate tasks like building, testing, and deploying code.
+
+There are two types of Jenkins pipelines:
+
+1. Declarative Pipeline
+
+2. Scripted Pipeline
+
+1. Declarative Pipeline::
+The declarative pipeline syntax is simpler and more structured. It's the recommended style for most users because it's easy to read and maintain
+
+
+
+![Uploading image.png…]()
+
+
+Create Pipeline Project::
+=======================
+
+Steps
+
+Click +New Item
+
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/3ac406d8-9a29-4e2f-9711-226ff8806524" />
+
+
+Enter the Project Name And Click OK
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/339a329c-47d6-41e0-b008-6128965033c5" />
+
+
+At General Section Provide the Description
+
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/cb474edb-bcaf-42f9-9d1d-b51da6333b74" />
+
+
+At Definition, We need to select the Pipeline Script 
+
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/5dc25001-3022-4d7a-8772-64c2bf85c55e" />
+
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/58d97da8-8baa-43e2-b25f-ad8c60fd0c32" />
+
+
+
+Here's an example of a simple declarative pipeline: Syntax
+
+pipeline{
+
+agent any
+
+stages{
+
+Stage ('Clone'){
+
+steps{
+
+// write code
+}
+}
+
+Stage ('Build'){
+steps{
+
+// write code
+}
+// write code
+
+}
+
+Stage ('Test'){
+
+steps{
+
+// write code
+}
+// write code
+
+}
+Stage ('Execute test casea and get the results'){
+
+steps{
+
+// write code
+}
+// write code
+
+}
+
+Stage ('Generated Artifact'){
+
+steps{
+
+// write code
+}
+// write code
+
+}
+
+Stage ('Deploy'){
+
+steps{
+
+// write code
+}
+// write code
+
+}
+
+// write code
+
+}
+
+}
+
+
+
+pipeline {
+   
+    agent any
+
+    stages {
+       
+        stage('Clone') {
+           
+            steps {
+              
+                echo 'Hello World'
+            }
+        }
+        stage('Build') {
+           
+            steps {
+              
+                echo 'Hello World'
+            }
+        }
+        stage('Test') {
+           
+            steps {
+               
+                echo 'Hello World'
+            }
+        }
+        stage('Generate the test reports') {
+          
+            steps {
+               
+                echo 'Hello World'
+            }
+        }
+        stage('Publishered Artifacts') {
+           
+            steps {
+              
+                echo 'Hello World'
+            }
+        }
+        stage('Deploy') {
+          
+            steps {
+              
+                echo 'Hello World'
+            }
+        }
+    }
+}
+
+
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/661f0dc6-aeb3-4a06-9a7c-b66c55e431bb" />
+
+
+
+Pipeline: Stage View::
+========================
+
+Pipeline: Stage View Plugin in Jenkins The Pipeline: Stage View plugin is a visualization tool in Jenkins that allows users to see a graphical view of each stage in a pipeline. It provides a real-time and historical overview of pipeline execution per stage, making it easier to debug, monitor, and analyze performance.
+
+
+Click the Build Now and we can triggered the pipeline
+
+
+
+
+
+
+
+
+Success all the stages & Steps
+
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/40a1524f-7926-4d0c-b294-c43ede8350f2" />
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/d2bec3cd-ec88-438e-badc-24f4bf8b581c" />
+
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/470c2ba0-fdd0-4981-ba34-87865fb4b684" />
