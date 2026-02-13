@@ -2144,7 +2144,7 @@ The declarative pipeline syntax is simpler and more structured. It's the recomme
 
 
 
-![Uploading image.png…]()
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/35709278-05d5-4b7c-9356-e5cf614ab7ce" />
 
 
 Create Pipeline Project::
@@ -2464,6 +2464,9 @@ pipeline {
 
 
 
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/02740931-e1dd-4a34-8120-3ec74a81fde6" />
+
+
 Scripted Pipeline::
 ==================
 
@@ -2505,3 +2508,7 @@ node{
     }
 
 }
+
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/68505168-9859-460f-a3e2-1b037b34d5d0" />
+
