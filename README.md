@@ -2512,3 +2512,183 @@ node{
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/68505168-9859-460f-a3e2-1b037b34d5d0" />
 
+
+
+
+13/02/2026::
+============
+
+
+Pipeline as Code::
+===================
+
+Both declarative and scripted pipelines are stored as Jenkinsfiles, which you place in your source code repository. This allows you to version control your pipeline and keep it aligned with your application code.
+
+
+![image](https://github.com/user-attachments/assets/7d3b20e8-e72f-41ff-94ce-0c912f51a93d)
+
+
+
+![image](https://github.com/user-attachments/assets/edd96e0c-ac4d-438e-8a5b-97ae99ed1fda)
+
+
+
+
+Pipeline as Code::
+==================
+Both declarative and scripted pipelines are stored as Jenkinsfiles, which you place in your source code repository. This allows you to version control your pipeline and keep it aligned with your application code.
+
+
+Declarative pipeline with Jenkinsfile::
+===============================
+
+pipeline {
+    
+    agent any
+    
+    stages{
+       
+        stage('checkout-->clone'){
+         
+            steps{
+            
+                git branch: 'feature/2026.02.06', url: 'https://github.com/srinfotechbatch5/spring-petclinic.git'
+                
+            }
+        }
+        
+        stage('Build'){
+            
+            steps{
+           
+            bat 'mvn install'
+        }
+        
+        }
+       
+        stage('Test'){
+            
+            steps{
+               
+                bat 'mvn test'
+           
+            }
+        }
+       
+        stage('Generate Junit Tests Results'){
+            
+            steps{
+               
+                junit 'target/surefire-reports/*.xml'
+           
+            }
+       
+        }
+       
+        stage('Generated the Artifacts'){
+           
+            steps{
+               
+                archiveArtifacts artifacts: 'target/*.war', followSymlinks: false
+           
+            }
+       
+        }
+    
+    }
+
+}
+
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/11677722-35f5-4b1b-85cc-9749cd943704" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/11677722-35f5-4b1b-85cc-9749cd943704" />
+
+
+This pipeline:::
+
+1 Checks out the source code from your Git repository.
+
+2. Builds the project using Maven.
+   
+3.Runs unit tests.
+
+4.Deploys the application using a custom script.
+
+JOb creation::
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/edec9bbf-3656-4edb-b80f-46661524dcaa" />
+
+Branches to build
+
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/062ed8d1-560c-49d7-9668-d91f7a901706" />
+
+
+Script Path::: This path is Jenkinsfiles where we maintained in github source code level
+
+
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/c423564b-85df-44b8-a366-c2738ec4b22e" />
+
+
+
+Scripted pipeline with Jenkinsfile::
+===============================
+
+
+node{
+    
+    stage('Clone'){
+        
+        git branch: 'feature/2026.02.06', url: 'https://github.com/srinfotechbatch5/spring-petclinic.git'
+  
+    }
+    
+    stage('Build'){
+        
+       
+        bat 'mvn clean install'
+    
+    }
+   
+    stage('test'){
+       
+        bat 'mvn test'
+   
+    }
+    
+    stage('genearted test results'){
+        
+       
+        junit 'target/surefire-reports/*.xml'
+   
+    }
+   
+    stage('published artifacts'){
+        
+       
+        archiveArtifacts artifacts: 'target/*.war', followSymlinks: false
+
+        
+   
+    }
+
+}
+
+
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/aaa9e47f-71a3-46e8-876b-f26d9faba86c" />
+
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/bdee842e-0044-4577-8898-5f5619fcfca4" />
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/bdee842e-0044-4577-8898-5f5619fcfca4" />
+
+
+
+
+github sourcecode jenkinsfile 
+
+
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/7d17ef94-2780-42b3-8e61-d7fce9b4d15e" />
