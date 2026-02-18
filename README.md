@@ -2728,7 +2728,8 @@ Integrate Tomcat  with Jenkins::
 ==============================
 
 
-<img width="1827" height="737" alt="image" src="https://github.com/user-attachments/assets/32ac9cfd-8681-4110-8a3a-53a4b49b13f7" />
+<img width="1805" height="756" alt="image" src="https://github.com/user-attachments/assets/ba77128c-4010-4864-8b0a-efcd1ed88ef7" />
+
 
 
 
@@ -2752,7 +2753,8 @@ Integrate Tomcat Jenkins::
 
 
 
-<img width="1827" height="737" alt="image" src="https://github.com/user-attachments/assets/07ffcb8c-ab3f-44df-b3ff-bb1eac042496" />
+<img width="1805" height="756" alt="image" src="https://github.com/user-attachments/assets/b479289c-aa71-4958-9fd3-fa403aa40386" />
+
 
 
 
